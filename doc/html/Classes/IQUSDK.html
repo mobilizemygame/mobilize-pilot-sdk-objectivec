@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IQUSDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">IQU SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">IQU</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/analyticsEnabled">analyticsEnabled</option>
+		
+		<option value="//api/name/checkServerInterval">checkServerInterval</option>
+		
+		<option value="//api/name/initialized">initialized</option>
+		
+		<option value="//api/name/log">log</option>
+		
+		<option value="//api/name/logEnabled">logEnabled</option>
+		
+		<option value="//api/name/payable">payable</option>
+		
+		<option value="//api/name/sendTimeout">sendTimeout</option>
+		
+		<option value="//api/name/serverAvailable">serverAvailable</option>
+		
+		<option value="//api/name/testMode">testMode</option>
+		
+		<option value="//api/name/updateInterval">updateInterval</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/instance">+ instance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addLog:">- addLog:</option>
+		
+		<option value="//api/name/clearCustomID">- clearCustomID</option>
+		
+		<option value="//api/name/clearFacebookID">- clearFacebookID</option>
+		
+		<option value="//api/name/clearGooglePlusID">- clearGooglePlusID</option>
+		
+		<option value="//api/name/clearTwitterID">- clearTwitterID</option>
+		
+		<option value="//api/name/getID:">- getID:</option>
+		
+		<option value="//api/name/setCustomID:">- setCustomID:</option>
+		
+		<option value="//api/name/setFacebookID:">- setFacebookID:</option>
+		
+		<option value="//api/name/setGooglePlusID:">- setGooglePlusID:</option>
+		
+		<option value="//api/name/setTwitterID:">- setTwitterID:</option>
+		
+		<option value="//api/name/start:secretKey:">- start:secretKey:</option>
+		
+		<option value="//api/name/start:secretKey:customID:">- start:secretKey:customID:</option>
+		
+		<option value="//api/name/start:secretKey:payable:">- start:secretKey:payable:</option>
+		
+		<option value="//api/name/start:secretKey:payable:customID:">- start:secretKey:payable:customID:</option>
+		
+		<option value="//api/name/trackCountry:">- trackCountry:</option>
+		
+		<option value="//api/name/trackItemPurchase:">- trackItemPurchase:</option>
+		
+		<option value="//api/name/trackItemPurchase:virtualCurrency:">- trackItemPurchase:virtualCurrency:</option>
+		
+		<option value="//api/name/trackMarketing:campaign:ad:subID:subSubID:">- trackMarketing:campaign:ad:subID:subSubID:</option>
+		
+		<option value="//api/name/trackMilestone:value:">- trackMilestone:value:</option>
+		
+		<option value="//api/name/trackRevenue:currency:">- trackRevenue:currency:</option>
+		
+		<option value="//api/name/trackRevenue:currency:reward:">- trackRevenue:currency:reward:</option>
+		
+		<option value="//api/name/trackRevenue:currency:virtualCurrency:">- trackRevenue:currency:virtualCurrency:</option>
+		
+		<option value="//api/name/trackRevenue:currency:virtualCurrency:reward:">- trackRevenue:currency:virtualCurrency:reward:</option>
+		
+		<option value="//api/name/trackTutorial:">- trackTutorial:</option>
+		
+		<option value="//api/name/trackUserAttribute:value:">- trackUserAttribute:value:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">IQUSDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>IQUSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>  Defines the IQUSDK class which is used for using IQU analytics services.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/instance" title="instance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/instance">+&nbsp;instance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Gets the singleton IQUSDK instance. If no instance exists a new instance will be created.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)instance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>singleton IQUSDK instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start:secretKey:" title="start:secretKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start:secretKey:">&ndash;&nbsp;start:secretKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Calls <a href="#//api/name/start:secretKey:payable:">start:secretKey:payable:</a> with <code>true</code> for aPayable parameter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start:(NSString *)<em>anApiKey</em> secretKey:(NSString *)<em>aSecretKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anApiKey</code></th>
+						<td><p>API key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSecretKey</code></th>
+						<td><p>Secret key</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start:secretKey:payable:" title="start:secretKey:payable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start:secretKey:payable:">&ndash;&nbsp;start:secretKey:payable:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Starts the SDK using and sets the <a href="#//api/name/payable">payable</a> property to the specified value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start:(NSString *)<em>anApiKey</em> secretKey:(NSString *)<em>aSecretKey</em> payable:(bool)<em>aPayable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anApiKey</code></th>
+						<td><p>API key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSecretKey</code></th>
+						<td><p>Secret key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aPayable</code></th>
+						<td><p>Initial <a href="#//api/name/payable">payable</a> value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the SDK is already started, another call to this method will be ignored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start:secretKey:customID:" title="start:secretKey:customID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start:secretKey:customID:">&ndash;&nbsp;start:secretKey:customID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Calls start:secretKey:payable:customID with <code>true</code> for aPayable parameter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start:(NSString *)<em>anApiKey</em> secretKey:(NSString *)<em>aSecretKey</em> customID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anApiKey</code></th>
+						<td><p>API key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSecretKey</code></th>
+						<td><p>Secret key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>A custom ID that the SDK should use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start:secretKey:payable:customID:" title="start:secretKey:payable:customID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start:secretKey:payable:customID:">&ndash;&nbsp;start:secretKey:payable:customID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Calls and then calls setCustomId to store aCustomId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start:(NSString *)<em>anApiKey</em> secretKey:(NSString *)<em>aSecretKey</em> payable:(bool)<em>aPayable</em> customID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anApiKey</code></th>
+						<td><p>API key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSecretKey</code></th>
+						<td><p>Secret key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aPayable</code></th>
+						<td><p>Initial <a href="#//api/name/payable">payable</a> value</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>A custom ID that the SDK should use.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the SDK is already started, another call to this method will only update the custom ID.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getID:" title="getID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getID:">&ndash;&nbsp;getID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Return ID for a certain type. If the ID is not known (yet), the method will return an empty string.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getID:(IQUSDKIDType)<em>aType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aType</code></th>
+						<td><p>Type to get ID for.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>stored ID value or empty string if it not (yet) known.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setFacebookID:" title="setFacebookID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setFacebookID:">&ndash;&nbsp;setFacebookID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Sets the Facebook ID the SDK should use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setFacebookID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>Facebook ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearFacebookID" title="clearFacebookID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearFacebookID">&ndash;&nbsp;clearFacebookID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Removes the current used Facebook ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearFacebookID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGooglePlusID:" title="setGooglePlusID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGooglePlusID:">&ndash;&nbsp;setGooglePlusID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Sets the Google+ ID the SDK should use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGooglePlusID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>Google+ ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearGooglePlusID" title="clearGooglePlusID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearGooglePlusID">&ndash;&nbsp;clearGooglePlusID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Removes the current used Google+ ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearGooglePlusID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTwitterID:" title="setTwitterID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTwitterID:">&ndash;&nbsp;setTwitterID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Sets the Twitter ID the SDK should use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTwitterID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>Twitter ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearTwitterID" title="clearTwitterID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearTwitterID">&ndash;&nbsp;clearTwitterID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Removes the current used Twitter ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearTwitterID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCustomID:" title="setCustomID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCustomID:">&ndash;&nbsp;setCustomID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Sets the custom ID the SDK should use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCustomID:(NSString *)<em>anID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anID</code></th>
+						<td><p>Custom ID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearCustomID" title="clearCustomID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearCustomID">&ndash;&nbsp;clearCustomID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Removes the current used custom ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearCustomID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackRevenue:currency:reward:" title="trackRevenue:currency:reward:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackRevenue:currency:reward:">&ndash;&nbsp;trackRevenue:currency:reward:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks payment made by the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackRevenue:(float)<em>anAmount</em> currency:(NSString *)<em>aCurrency</em> reward:(NSString *)<em>aReward</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAmount</code></th>
+						<td><p>Amount</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCurrency</code></th>
+						<td><p>Currency code (ISO 4217 standard)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aReward</code></th>
+						<td><p>Name of reward or null if there no such value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackRevenue:currency:" title="trackRevenue:currency:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackRevenue:currency:">&ndash;&nbsp;trackRevenue:currency:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks revenue, just calls trackRevenue:currency:reward with null for aReward.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackRevenue:(float)<em>anAmount</em> currency:(NSString *)<em>aCurrency</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAmount</code></th>
+						<td><p>Amount</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCurrency</code></th>
+						<td><p>Currency code (ISO 4217 standard)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackRevenue:currency:virtualCurrency:reward:" title="trackRevenue:currency:virtualCurrency:reward:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackRevenue:currency:virtualCurrency:reward:">&ndash;&nbsp;trackRevenue:currency:virtualCurrency:reward:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks payment made by the user including an amount in a virtual currency.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackRevenue:(float)<em>anAmount</em> currency:(NSString *)<em>aCurrency</em> virtualCurrency:(float)<em>aVirtualCurrencyAmount</em> reward:(NSString *)<em>aReward</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAmount</code></th>
+						<td><p>Amount</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCurrency</code></th>
+						<td><p>Currency code (ISO 4217 standard)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aVirtualCurrencyAmount</code></th>
+						<td><p>Amount of virtual currency rewarded with this purchase</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aReward</code></th>
+						<td><p>Name of reward or null if there no such value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackRevenue:currency:virtualCurrency:" title="trackRevenue:currency:virtualCurrency:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackRevenue:currency:virtualCurrency:">&ndash;&nbsp;trackRevenue:currency:virtualCurrency:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks revenue, just calls trackRevenue:currency:virtualCurrency:reward with null for aReward.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackRevenue:(float)<em>anAmount</em> currency:(NSString *)<em>aCurrency</em> virtualCurrency:(float)<em>aVirtualCurrencyAmount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAmount</code></th>
+						<td><p>Amount</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCurrency</code></th>
+						<td><p>Currency code (ISO 4217 standard)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aVirtualCurrencyAmount</code></th>
+						<td><p>Amount of virtual currency rewarded with this purchase</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackItemPurchase:" title="trackItemPurchase:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackItemPurchase:">&ndash;&nbsp;trackItemPurchase:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks an item purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackItemPurchase:(NSString *)<em>aName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aName</code></th>
+						<td><p>Name of item</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackItemPurchase:virtualCurrency:" title="trackItemPurchase:virtualCurrency:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackItemPurchase:virtualCurrency:">&ndash;&nbsp;trackItemPurchase:virtualCurrency:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks an item purchase including amount in virtual currency.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackItemPurchase:(NSString *)<em>aName</em> virtualCurrency:(float)<em>aVirtualCurrencyAmount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aName</code></th>
+						<td><p>Name of item</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aVirtualCurrencyAmount</code></th>
+						<td><p>Amount of virtual currency rewarded with this purchase</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackTutorial:" title="trackTutorial:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackTutorial:">&ndash;&nbsp;trackTutorial:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks tutorial progression achieved by the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackTutorial:(NSString *)<em>aStep</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aStep</code></th>
+						<td><p>Step name or number of the tutorial.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackMilestone:value:" title="trackMilestone:value:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackMilestone:value:">&ndash;&nbsp;trackMilestone:value:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks a milestone achieved by the user, e.g. if the user achieved a level.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackMilestone:(NSString *)<em>aName</em> value:(NSString *)<em>aValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aName</code></th>
+						<td><p>Milestone name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aValue</code></th>
+						<td><p>Value of the milestone</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackMarketing:campaign:ad:subID:subSubID:" title="trackMarketing:campaign:ad:subID:subSubID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackMarketing:campaign:ad:subID:subSubID:">&ndash;&nbsp;trackMarketing:campaign:ad:subID:subSubID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks a marketing source. All parameters are optional, if a value is not known nil must be used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackMarketing:(NSString *)<em>aPartner</em> campaign:(NSString *)<em>aCampaign</em> ad:(NSString *)<em>anAd</em> subID:(NSString *)<em>aSubID</em> subSubID:(NSString *)<em>aSubSubID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aPartner</code></th>
+						<td><p>Marketing partner name or null if there is none.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCampaign</code></th>
+						<td><p>Marketing campaign name or null if there is none.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAd</code></th>
+						<td><p>Marketing ad name or null if there is none.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSubID</code></th>
+						<td><p>Marketing partner sub ID or null if there is none.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSubSubID</code></th>
+						<td><p>Marketing partner sub sub ID or null if there is none.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackUserAttribute:value:" title="trackUserAttribute:value:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackUserAttribute:value:">&ndash;&nbsp;trackUserAttribute:value:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks an user attribute, e.g. gender or birthday.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackUserAttribute:(NSString *)<em>aName</em> value:(NSString *)<em>aValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aName</code></th>
+						<td><p>Name of the user attribute, e.g. gender</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aValue</code></th>
+						<td><p>Value of the user attribute, e.g. female</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackCountry:" title="trackCountry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackCountry:">&ndash;&nbsp;trackCountry:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Tracks the country of the user, only required for S2S implementations.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trackCountry:(NSString *)<em>aCountry</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCountry</code></th>
+						<td><p>Country as specified in ISO3166-1 alpha-2, e.g. US, NL, DE</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If the IQU SDK has not been <a href="#//api/name/initialized">initialized</a> or <a href="#//api/name/analyticsEnabled">analyticsEnabled</a> is <code>false</code>, this method will do nothing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addLog:" title="addLog:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addLog:">&ndash;&nbsp;addLog:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Add a message to the <a href="#//api/name/log">log</a>. This method is used by other classes to add debug messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addLog:(NSString *)<em>aMessage</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>Message to add to the <a href="#//api/name/log">log</a> (messages are separated by \n)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If IQUSDK_DEBUG is not defined then this method will do nothing and the <a href="#//api/name/log">log</a> will stay empty.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/analyticsEnabled" title="analyticsEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/analyticsEnabled">&nbsp;&nbsp;analyticsEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  This property reflects the limit ad tracking value. When <code>false</code> all tracking calls will be ignored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) bool analyticsEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initialized" title="initialized"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialized">&nbsp;&nbsp;initialized</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  The initialized state property. After a call to start this property will return <code>true</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) bool initialized</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/payable" title="payable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/payable">&nbsp;&nbsp;payable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The payable property determines if a payable event is active or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) bool payable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The default value is <code>true</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateInterval" title="updateInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateInterval">&nbsp;&nbsp;updateInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  This property determines the time in milliseconds to wait between update calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int updateInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Any new value assigned will be used with the next wait call.</p>
+
+<p>  Default value is 200.</p>
+
+<p>  This value determines the maximum delay between creating messages and sending them.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendTimeout" title="sendTimeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendTimeout">&nbsp;&nbsp;sendTimeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  This property determines the maximum time in milliseconds sending a message to the IQU server is allowed to take.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int sendTimeout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  If there is no response by the IQU server within this time, the SDK assumes the server is not reachable and will set</p>
+
+<p>  the <a href="#//api/name/serverAvailable">serverAvailable</a> property to <code>false</code>.</p>
+
+<p>  Default value is 20000 (20 seconds).</p>
+
+<p>  The minimum value allowed is 100.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkServerInterval" title="checkServerInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkServerInterval">&nbsp;&nbsp;checkServerInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  This property determines the time between server availability checks in milliseconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int checkServerInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  This property is used once the sending of a message fails. The checkServerInterval property determines the time the</p>
+
+<p>  SDK waits before checking the availability of the server and trying to resend the messages.</p>
+
+<p>  The default value is 2000 (2 seconds).</p>
+
+<p>  The minimum value allowed is 100.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logEnabled" title="logEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logEnabled">&nbsp;&nbsp;logEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Turns the <a href="#//api/name/log">log</a> on or off. When turned on, various IQU SDK methods will add information to the <a href="#//api/name/log">log</a> property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) bool logEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  The current <a href="#//api/name/log">log</a> will be cleared when turning off the logging.</p>
+
+<p>  The default value is true if IQUSDK_DEBUG is defined, else it is false.</p>
+
+<p>  This property is only of use when IQUSDK_DEBUG is defined, else there is no logging and setting this property to true</p>
+
+<p>  has no effect.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/log" title="log"></a>
+	<h3 class="method-title"><code><a href="#//api/name/log">&nbsp;&nbsp;log</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Gets the current log.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSString *log</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serverAvailable" title="serverAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serverAvailable">&nbsp;&nbsp;serverAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Returns the sever availability state. The state is updated when messages are sent to the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) bool serverAvailable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  While the server is not available, messages will be queued to be sent once the server is available again.</p>
+
+<p>  If the server is not available and there are pending messages, the class will check the server availability at regular</p>
+
+<p>  intervals. Once the server becomes available again, the messages are sent to the server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/testMode" title="testMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/testMode">&nbsp;&nbsp;testMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  The test mode property can be used during development to simulate a certain situation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) IQUSDKTestMode testMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Use IQUSDKTestModeSimulateServer to prevent any network traffic.</p>
+
+<p>  Use IQUSDKTestModeSimulateOffline to test the SDK behaviour while the server is not available.</p>
+
+<p>  To go back to normal operation use IQUSDKTestModeNone.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IQUSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 IQU. All rights reserved. Updated: 2015-07-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

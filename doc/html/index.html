@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IQU SDK Reference</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="index.html">IQU SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="index.html">IQU</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="hierarchy.html">Hierarchy</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview-contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">IQU SDK Reference</h1>
+
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>Introduction</h2>
+
+<p>IQUSDK is a class that encapsulates the IQU SDK and offers various methods and properties to communicate with the IQU server.</p>
+
+<h2>Quick usage guide</h2>
+
+<ol>
+<li>Methods and properties can be accessed through the <a href="Classes/IQUSDK.html#//api/name/instance">[IQUSDK instance]</a> method.</li>
+<li>Call <a href="Classes/IQUSDK.html#//api/name/start:secretKey:">[IQUSDK start:secretKey:]</a> or <a href="Classes/IQUSDK.html#//api/name/start:secretKey:payable:">[IQUSDK start:secretKey:payable:]</a> or
+<a href="Classes/IQUSDK.html#//api/name/start:secretKey:customID:">[IQUSDK start:secretKey:customID:]</a> or <a href="Classes/IQUSDK.html#//api/name/start:secretKey:payable:customID:">[IQUSDK start:secretKey:payable:customID:]</a> to start the IQU SDK.</li>
+<li>Add additional Ids via <a href="Classes/IQUSDK.html#//api/name/setFacebookID:">[IQUSDK setFacebookID:]</a>, <a href="Classes/IQUSDK.html#//api/name/setGooglePlusID:">[IQUSDK setGooglePlusID:]</a>, <a href="Classes/IQUSDK.html#//api/name/setTwitterID:">[IQUSDK setTwitterID:]</a> or <a href="Classes/IQUSDK.html#//api/name/setCustomID:">[IQUSDK setCustomID:]</a>.</li>
+<li>Start calling analytic tracking methods to send messages to the server.</li>
+<li>Update the <a href="Classes/IQUSDK.html#//api/name/payable">[IQUSDK payable]</a> property to indicate the player is busy with a payable action.</li>
+</ol>
+
+
+<h2>Network communication</h2>
+
+<p>The IQU SDK uses a separate thread to send messages to the server (to prevent blocking the main thread). This means that there might be a small delay
+before messages are actually sent to the server. The maximum delay is determined by <a href="Classes/IQUSDK.html#//api/name/updateInterval">[IQUSDK updateInterval]</a> property.</p>
+
+<p>If the SDK fails to send a message to the IQU server, messages are queued and are sent when the server is available again.
+How often the SDK checks for the server is determines by the <a href="Classes/IQUSDK.html#//api/name/checkServerInterval">[IQUSDK checkServerInterval]</a> property.</p>
+
+<p>The queued messages are stored in persistent storage so they still can be resent after an application restart.</p>
+
+<h2>Ids</h2>
+
+<p>The SDK supports various ids which are included with every tracking message sent to the server. See IQUSDKIdType for the types supported
+by the SDK. Use <a href="Classes/IQUSDK.html#//api/name/getID:">[IQUSDK getID:]</a> to get an id value.</p>
+
+<p>Some ids are determined by the SDK itself, other ids must be set via one of
+the following methods: <a href="Classes/IQUSDK.html#//api/name/setFacebookID:">[IQUSDK setFacebookID:]</a>, <a href="Classes/IQUSDK.html#//api/name/setGooglePlusID:">[IQUSDK setGooglePlusID:]</a>, <a href="Classes/IQUSDK.html#//api/name/setTwitterID:">[IQUSDK setTwitterID:]</a> or <a href="Classes/IQUSDK.html#//api/name/setCustomID:">[IQUSDK setCustomID:]</a></p>
+
+<p>The SDK will try to obtain the advertising id and limited ad tracking. If limited ad tracking is enabled, the SDK will disable the tracking messages
+and the <a href="Classes/IQUSDK.html#//api/name/analyticsEnabled">[IQUSDK analyticsEnabled]</a> property will return <code>false</code>. Calling any of the tracking methods will do nothing.</p>
+
+<p>The SDK checks for the required classes and uses reflection to obtain the values so there are no errors when running the application on iOS versions
+that don&rsquo;t support the advertising ID.</p>
+
+<p>To remove support for the advertising id edit the <em>IQUSDKConfig.h</em> and comment out the <a href="Classes/IQUSDK.html">IQUSDK</a>_ADVERTISING_ID define.</p>
+
+<h2>Informational properties</h2>
+
+<p>The IQU SDK offers the following informational properties:</p>
+
+<ol>
+<li><a href="Classes/IQUSDK.html#//api/name/analyticsEnabled">[IQUSDK analyticsEnabled]</a> indicates if the IQU SDK analytics part is enabled. When disabled the tracking methods will do nothing.
+The analytics part is disabled when the user enabled limited ad tracking.</li>
+<li><a href="Classes/IQUSDK.html#//api/name/serverAvailable">[IQUSDK serverAvailable]</a> to get information if the messages were sent successfully or not.</li>
+</ol>
+
+
+<h2>Testing</h2>
+
+<p>The IQU SDK contains the following properties to help with testing the SDK:</p>
+
+<ol>
+<li><a href="Classes/IQUSDK.html#//api/name/logEnabled">[IQUSDK logEnabled]</a> property to turn logging on or off.</li>
+<li><a href="Classes/IQUSDK.html#//api/name/log">[IQUSDK log]</a> property which will be filled with messages from various methods.</li>
+<li><a href="Classes/IQUSDK.html#//api/name/testMode">[IQUSDK testMode]</a> property to test the SDK without any server interaction or to simulate an off-line situation
+with the server not being available.</li>
+</ol>
+
+
+<p>To turn on debug messages from various classes IQUSDK_DEBUG needs to be defined when building the application. See the <em>IQUSDKConfig.h</em> file to enable
+or disable this definition.</p>
+
+<h2>Advance timing</h2>
+
+<p>The IQU SDK offers several properties to adjust the various timings:</p>
+
+<ol>
+<li><a href="Classes/IQUSDK.html#//api/name/updateInterval">[IQUSDK updateInterval]</a> property determines the time between the internal update calls.</li>
+<li><a href="Classes/IQUSDK.html#//api/name/sendTimeout">[IQUSDK sendTimeout]</a> property determines the maximum time sending a message to the server may take.</li>
+<li><a href="Classes/IQUSDK.html#//api/name/checkServerInterval">[IQUSDK checkServerInterval]</a> property determines the time between checks for server availability. If sending of data fails,
+the update thread  will wait the time, as set by this property, before trying to send the data again.</li>
+</ol>
+
+						
+						
+					</div>
+					
+
+					<div class="index-container">
+						
+
+						
+						<div class="index-column">
+							<h2 class="index-title">Class References</h2>
+							<ul>
+								
+								<li><a href="Classes/IQUSDK.html">IQUSDK</a></li>
+								
+							</ul>
+						</div>
+						
+
+						
+						<div class="index-column">
+							
+
+							
+							<h2 class="index-title">Constant References</h2>
+							<ul>
+								
+									<li><a href="Constants/IQUSDKIDType.html">IQUSDKIDType</a></li>
+								
+									<li><a href="Constants/IQUSDKTestMode.html">IQUSDKTestMode</a></li>
+								
+							</ul>
+							
+
+							
+						</div>
+						
+					</div>
+
+					<footer>
+						<div class="footer-copyright">
+							
+							<p class="copyright">Copyright &copy; 2015 IQU. All rights reserved. Updated: 2015-07-16</p>
+							
+							
+							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+							
+						</div>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</article>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
