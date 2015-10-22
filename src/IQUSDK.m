@@ -231,7 +231,7 @@
  
   @return JSONObject instance containing event
 */
-- (NSMutableDictionary*)createEvent:(NSString*)anEventType addTimestamp:(bool)anAddTimestamp;
+- (NSMutableDictionary*)createEvent:(NSString*)anEventType;
 
 /**
   Checks if pending messages contain at least one message of a certain
@@ -528,7 +528,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventRevenue addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventRevenue];
   [event setObject:@(anAmount) forKey:@"amount"];
   [event setObject:aCurrency forKey:@"currency"];
   if (aReward != nil) {
@@ -555,7 +555,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventRevenue addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventRevenue];
   [event setObject:@(anAmount) forKey:@"amount"];
   [event setObject:aCurrency forKey:@"currency"];
   [event setObject:@(aVirtualCurrencyAmount) forKey:@"vc_amount"];
@@ -580,7 +580,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventItemPurchase addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventItemPurchase];
   [event setObject:aName forKey:@"name"];
   [self addEvent:event];
 }
@@ -593,7 +593,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventItemPurchase addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventItemPurchase];
   [event setObject:aName forKey:@"name"];
   [event setObject:@(aVirtualCurrencyAmount) forKey:@"vc_amount"];
   [self addEvent:event];
@@ -607,7 +607,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventTutorial addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventTutorial];
   [event setObject:aStep forKey:@"step"];
   [self addEvent:event];
 }
@@ -620,7 +620,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventMilestone addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventMilestone];
   [event setObject:aName forKey:@"name"];
   [event setObject:aValue forKey:@"value"];
   [self addEvent:event];
@@ -638,7 +638,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventMarketing addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventMarketing];
   if (aPartner != nil) {
     [event setObject:aPartner forKey:@"partner"];
   }
@@ -665,7 +665,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventUserAttribute addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventUserAttribute];
   [event setObject:aName forKey:@"name"];
   [event setObject:aValue forKey:@"value"];
   [self addEvent:event];
@@ -679,7 +679,7 @@ static NSString* const EventPlatform = @"platform";
   if (!self.analyticsEnabled || !self.initialized) {
     return;
   }
-  NSMutableDictionary* event = [self createEvent:EventCountry addTimestamp:true];
+  NSMutableDictionary* event = [self createEvent:EventCountry];
   [event setObject:aCountry forKey:@"value"];
   [self addEvent:event];
 }
@@ -1261,12 +1261,10 @@ static NSString* const EventPlatform = @"platform";
 /**
   Implements the createEvent method.
 */
-- (NSMutableDictionary*)createEvent:(NSString*)anEventType addTimestamp:(bool)anAddTimestamp {
+- (NSMutableDictionary*)createEvent:(NSString*)anEventType {
   NSMutableDictionary* result = [[NSMutableDictionary alloc] initWithCapacity:10];
   [result setObject:anEventType forKey:@"type"];
-  if (anAddTimestamp) {
-    [result setObject:[self.m_dateFormat stringFromDate:[NSDate date]] forKey:@"timestamp"];
-  }
+  [result setObject:[self.m_dateFormat stringFromDate:[NSDate date]] forKey:@"timestamp"];
   return result;
 }
 
@@ -1323,7 +1321,7 @@ static NSString* const EventPlatform = @"platform";
 - (void)trackHeartbeat:(IQUSDKMessageQueue*)aMessages {
   int64_t currentTime = [IQUSDKUtils currentTimeMillis];
   if (currentTime > self.m_heartbeatTime + HeartbeatInterval) {
-    NSMutableDictionary* event = [self createEvent:EventHeartbeat addTimestamp:true];
+    NSMutableDictionary* event = [self createEvent:EventHeartbeat];
     [event setObject:@(self.payable) forKey:@"is_payable"];
     @synchronized(self.m_ids) {
       [aMessages add:[[IQUSDKMessage alloc] init:self.m_ids event:event]];
@@ -1336,7 +1334,7 @@ static NSString* const EventPlatform = @"platform";
   Implements the trackPlatform method.
 */
 - (void)trackPlatform {
-  NSMutableDictionary* event = [self createEvent:EventPlatform addTimestamp:false];
+  NSMutableDictionary* event = [self createEvent:EventPlatform];
   [event setObject:@"Apple" forKey:@"manufacturer"];
   [event setObject:@"Apple" forKey:@"device_brand"];
 #ifdef TARGET_OS_IPHONE
