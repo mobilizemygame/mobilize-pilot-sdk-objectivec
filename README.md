@@ -10,9 +10,13 @@ IQUSDK is a class that encapsulates the IQU SDK and offers various methods and p
 1. Clone or download the zip file (and unzip it to an appropriate location).
 2. Within XCode, add a new group to the project and name it appropriately (for example IQU SDK)
 3. Right click on the new group and select "Add files..."; add all the files from the *src/* folder 
-4. To remove support for the advertising id edit the *IQUSDKConfig.h* and comment out the `IQUSDK_ADVERTISING_ID` define.
+4. If the target is an iOS device, add the CoreTelephony framework (1)
+5. To remove support for the advertising id edit the *IQUSDKConfig.h* and comment out the `IQUSDK_ADVERTISING_ID` define.
+6. If the app should support the advertising id, add the AdSupport framework (1)
 
 The *doc/html* folder contains html formatted help documents.
+
+(1) To add a framework, click the project, select the *Build Phases* tab and add frameworks to the *Link Binary With Libraries* section.
 
 ## Quick usage guide
 
