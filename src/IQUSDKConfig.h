@@ -17,7 +17,7 @@
 /**
   Version of the SDK
 */
-#define IQUSDK_VERSION "1.0.0"
+#define IQUSDK_VERSION "1.0.1"
 
 /**
   Type of the SDK
