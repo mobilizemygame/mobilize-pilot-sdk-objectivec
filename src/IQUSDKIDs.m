@@ -81,7 +81,7 @@ static NSString* const IDsKey = @"IDs";
 - (instancetype)init:(IQUSDKIDs*)anIDs {
   self = [super init];
   if (self != nil) {
-    self.m_ids = anIDs.m_ids.copy;
+    self.m_ids = anIDs.m_ids.mutableCopy;
   }
   return self;
 }
