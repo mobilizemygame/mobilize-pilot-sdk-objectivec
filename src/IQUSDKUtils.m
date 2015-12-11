@@ -24,16 +24,9 @@
 */
 + (NSString*)toJSON:(NSDictionary*)aCollection {
   NSError* error;
-#ifdef IQUSDK_DEBUG
-  NSData* jsonData =
-      [NSJSONSerialization dataWithJSONObject:aCollection
-                                      options:NSJSONWritingPrettyPrinted
-                                        error:&error];
-#else
   NSData* jsonData = [NSJSONSerialization dataWithJSONObject:aCollection
                                                      options:0
                                                        error:&error];
-#endif
   if (!jsonData) {
     NSLog(@"toJSON: error: %@", error.localizedDescription);
     return @"{}";
