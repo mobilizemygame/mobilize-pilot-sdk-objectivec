@@ -97,11 +97,6 @@
 */
 @property NSMutableString* m_log;
 
-/**
-  Used to format date and time for use by the server.
-*/
-@property NSDateFormatter* m_dateFormat;
-
 #pragma mark - Private initilization methods
 
 /**
@@ -223,12 +218,11 @@
 - (void)addEvent:(NSDictionary*)anEvent;
 
 /**
-  Creates an event with a certain type and adds optionally a time-stamp for
+  Creates an event with a certain type and adds a time-stamp for
   the current date and time.
  
   @param anEventType Type to use
-  @param anAddTimestamp When <code>true</code> add "timestamp" field.
- 
+
   @return JSONObject instance containing event
 */
 - (NSMutableDictionary*)createEvent:(NSString*)anEventType;
@@ -374,8 +368,6 @@ static NSString* const EventPlatform = @"platform";
     self->_updateInterval = DefaultUpdateInterval;
     // initialize private properties
     self.m_checkServerTime = 0;
-    self.m_dateFormat = [[NSDateFormatter alloc] init];
-    [self.m_dateFormat setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss"];
     self.m_firstUpdateCall = true;
     self.m_heartbeatTime = 0;
     self.m_ids = [[IQUSDKIDs alloc] init];
@@ -1264,7 +1256,9 @@ static NSString* const EventPlatform = @"platform";
 - (NSMutableDictionary*)createEvent:(NSString*)anEventType {
   NSMutableDictionary* result = [[NSMutableDictionary alloc] initWithCapacity:10];
   [result setObject:anEventType forKey:@"type"];
-  [result setObject:[self.m_dateFormat stringFromDate:[NSDate date]] forKey:@"timestamp"];
+  NSDateFormatter* dateFormat = [[NSDateFormatter alloc] init];
+  [dateFormat setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss"];
+  [result setObject:[dateFormat stringFromDate:[NSDate date]] forKey:@"timestamp"];
   return result;
 }
 
